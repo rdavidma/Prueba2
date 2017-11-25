@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="Pendiente">
+      Pendiente
+    </ion-segment-button>
+    <ion-segment-button value="Encurso">
+      En curso
+    </ion-segment-button>
+    <ion-segment-button value="Terminado">
+      Terminado
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'Pendiente'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <ion-list>
+    <button ion-item>
+      <ion-icon name="cart" item-start></ion-icon>
+      Shopping
+    </button>
+
+    <button ion-item>
+      <ion-icon name="medical" item-start></ion-icon>
+      Hospital
+    </button>
+
+    <button ion-item>
+      <ion-icon name="cafe" item-start></ion-icon>
+      Cafe
+    </button>
+
+    <button ion-item>
+      <ion-icon name="paw" item-start></ion-icon>
+      Dog Park
+    </button>
+
+    <button ion-item>
+      <ion-icon name="beer" item-start></ion-icon>
+      Pub
+    </button>
+
+    <button ion-item>
+      <ion-icon name="planet" item-start></ion-icon>
+      Space
+    </button>
+
+  </ion-list>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'Encurso'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <ion-list>
+    <button ion-item>
+      <ion-icon name="cart" item-start></ion-icon>
+      Shopping
+    </button>
+
+    <button ion-item>
+      <ion-icon name="medical" item-start></ion-icon>
+      Hospital
+    </button>
+
+    <button ion-item>
+      <ion-icon name="cafe" item-start></ion-icon>
+      Cafe
+    </button>
+
+    <button ion-item>
+      <ion-icon name="paw" item-start></ion-icon>
+      Dog Park
+    </button>
+
+    <button ion-item>
+      <ion-icon name="beer" item-start></ion-icon>
+      Pub
+    </button>
+
+    <button ion-item>
+      <ion-icon name="planet" item-start></ion-icon>
+      Space
+    </button>
+
+  </ion-list>
+      </ion-thumbnail> 
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'Terminado'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <ion-list>
+    <button ion-item>
+      <ion-icon name="cart" item-start></ion-icon>
+      Shopping
+    </button>
+
+    <button ion-item>
+      <ion-icon name="medical" item-start></ion-icon>
+      Hospital
+    </button>
+
+    <button ion-item>
+      <ion-icon name="cafe" item-start></ion-icon>
+      Cafe
+    </button>
+
+    <button ion-item>
+      <ion-icon name="paw" item-start></ion-icon>
+      Dog Park
+    </button>
+
+    <button ion-item>
+      <ion-icon name="beer" item-start></ion-icon>
+      Pub
+    </button>
+
+    <button ion-item>
+      <ion-icon name="planet" item-start></ion-icon>
+      Space
+    </button>
+
+  </ion-list>
+      </ion-thumbnail> 
+    </ion-item>
+  </ion-list>
+
+  
+</div>
+</ion-content>
